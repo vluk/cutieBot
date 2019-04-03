@@ -16,8 +16,11 @@ Asymptote >= 2.44
 ImageMagick >= 7.0
 ```
 [Downloading Python](https://wiki.python.org/moin/BeginnersGuide/Download)
+
 [Downloading latexmk](https://mg.readthedocs.io/latexmk.html)
+
 [Downloading Asymptote](http://asymptote.sourceforge.net/)
+
 [Downloading ImageMagick](https://www.imagemagick.org/script/download.php)
 
 ### Installing
