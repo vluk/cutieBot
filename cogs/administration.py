@@ -47,4 +47,4 @@ class Administration(commands.Cog):
     @commands.command(hidden=True)
     @commands.is_owner()
     async def debug(self, ctx, *, str_code : str):
-        await self.bot_exec(ctx, str_code) 
+        await self.bot_exec(ctx, str_code)

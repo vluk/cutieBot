@@ -11,9 +11,10 @@ from cogs.economy import Economy
 from cogs.mathgames import MathGames
 
 prefix = '?'
-bot = commands.Bot(command_prefix=prefix)
+help_command = commands.DefaultHelpCommand(dm_help=True)
+bot = commands.Bot(command_prefix=prefix, help_command = help_command)
 
-async def load_cogs(session):
+async def setup(session):
     bot.add_cog(Administration(bot))
     bot.add_cog(Query(bot, session))
     bot.add_cog(ServerUtils(bot))
@@ -23,9 +24,9 @@ async def load_cogs(session):
 @bot.event
 async def on_ready():
     session = aiohttp.ClientSession()
-    await load_cogs(session)
+    await setup(session)
     print("I am combat ready!")
 
 config = configparser.ConfigParser()
 config.read('config.ini')
-bot.run(config.get('tokens', 'DISCORD_TOKEN_1'))
+bot.run(config.get('tokens', 'DISCORD_TOKEN_0'))
