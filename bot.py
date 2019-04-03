@@ -9,6 +9,7 @@ from cogs.query import Query
 from cogs.serverutils import ServerUtils
 from cogs.economy import Economy
 from cogs.mathgames import MathGames
+from cogs.utility import Utility
 
 prefix = '?'
 help_command = commands.DefaultHelpCommand(dm_help=True)
@@ -20,6 +21,7 @@ async def setup(session):
     bot.add_cog(ServerUtils(bot))
     bot.add_cog(Economy(bot, session))
     bot.add_cog(MathGames(bot, session))
+    bot.add_cog(Utility(bot))
 
 @bot.event
 async def on_ready():

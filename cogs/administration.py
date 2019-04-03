@@ -41,10 +41,6 @@ class Administration(commands.Cog):
         await ctx.bot.logout()
 
     @commands.command(hidden=True)
-    async def ping(sefl, ctx):
-        await ctx.send("pong!")
-
-    @commands.command(hidden=True)
     @commands.is_owner()
     async def debug(self, ctx, *, str_code : str):
         await self.bot_exec(ctx, str_code)
