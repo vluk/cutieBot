@@ -29,9 +29,13 @@ First, clone the repository.
 ```
 git clone git@github.com:vluk/cutieBot.git
 ```
+Next, go into the directory.
+```
+cd cutieBot
+```
 Next, download all the necessary Python packages.
 ```
-pip3 -r requirements.txt
+pip3 install -r requirements.txt
 ```
 Make a `config.ini` file in the root directory and put a [Discord bot token.](https://discordapp.com/developers/docs/intro).
 Example:
