@@ -1,5 +1,6 @@
 import discord
 import inspect
+import subprocess
 from discord.ext import commands
 
 class Administration(commands.Cog):

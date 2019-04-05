@@ -27,7 +27,7 @@ class ServerUtils(commands.Cog):
         elif len(message.attachments) > 0:
             embed.set_image(url=message.attachments[0]["url"])
         url = "https://discordapp.com/channels/{0}/{1}/{2}".format(
-            str(message.guild.id), 
+            str(message.guild.id),
             str(message.channel.id),
             str(message.id)
         )
@@ -35,9 +35,9 @@ class ServerUtils(commands.Cog):
         await channel.send(embed = embed)
 
     @commands.Cog.listener()
-    async def on_reaction_add(self, reaction, user):
-        if reaction.emoji == "⭐":
-            message = reaction.message
+    async def on_raw_reaction_add(self, payload):
+        if payload.emoji.name == "⭐":
+            message = await self.bot.get_channel(payload.channel_id).fetch_message(payload.message_id)
             await self.add_star(message)
 
     @commands.command()
