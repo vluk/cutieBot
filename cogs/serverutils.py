@@ -22,10 +22,11 @@ class ServerUtils(commands.Cog):
             timestamp = message.created_at,
             colour = author.colour
         )
-        if len(message.embeds) > 0 and message.embeds[0]["type"] == "image":
-            embed.set_image(url=message.embeds[0].image.url)
+        if len(message.embeds) > 0 and message.embeds[0].type == "image":
+            print(message.embeds[0].url)
+            embed.set_image(url=message.embeds[0].url)
         elif len(message.attachments) > 0:
-            embed.set_image(url=message.attachments[0]["url"])
+            embed.set_image(url=message.attachments[0].url)
         url = "https://discordapp.com/channels/{0}/{1}/{2}".format(
             str(message.guild.id),
             str(message.channel.id),
