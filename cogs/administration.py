@@ -2,7 +2,6 @@ import discord
 import inspect
 import subprocess
 from discord.ext import commands
-
 class Administration(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -13,6 +12,7 @@ class Administration(commands.Cog):
         codes = str_code.strip('` ').split(";")
         python = '```py\n{}\n```'
         env = {
+            'self' : self,
             'bot': self.bot,
             'ctx': ctx,
             'message': ctx.message,
@@ -45,3 +45,9 @@ class Administration(commands.Cog):
     @commands.is_owner()
     async def debug(self, ctx, *, str_code : str):
         await self.bot_exec(ctx, str_code)
+
+    @commands.command(hidden=True)
+    @commands.is_owner()
+    async def say(self, ctx, *, msg : str):
+        await ctx.message.delete()
+        await ctx.send(msg)

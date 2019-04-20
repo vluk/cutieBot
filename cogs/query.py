@@ -92,7 +92,9 @@ class Query(commands.Cog):
             embed = discord.Embed(
                 color = 0xF5C518,
                 title = movie_info["Title"],
-                description = movie_info["Plot"])
+                description = movie_info["Plot"],
+                url = "https://www.imdb.com/title/" + movie_info["imdbID"]
+            )
             embed.set_thumbnail(url=movie_info["Poster"])
             embed.add_field(name="Rated", value=movie_info["Rated"])
             embed.add_field(name="Year", value=movie_info["Year"])

@@ -16,7 +16,8 @@ prefix = '?'
 help_command = commands.DefaultHelpCommand(dm_help=True)
 bot = commands.Bot(command_prefix=prefix, help_command = help_command)
 
-async def setup(session):
+async def setup():
+    session = aiohttp.ClientSession()
     bot.add_cog(Administration(bot))
     bot.add_cog(Query(bot, session))
     bot.add_cog(ServerUtils(bot))
@@ -27,8 +28,7 @@ async def setup(session):
 
 @bot.event
 async def on_ready():
-    session = aiohttp.ClientSession()
-    await setup(session)
+    await setup()
     print("I am combat ready!")
 
 config = configparser.ConfigParser()
