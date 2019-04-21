@@ -11,6 +11,7 @@ from cogs.economy import Economy
 from cogs.mathgames import MathGames
 from cogs.utility import Utility
 from cogs.dictionary import Dictionary
+from cogs.connect import Connect
 
 prefix = '?'
 help_command = commands.DefaultHelpCommand(dm_help=True)
@@ -25,6 +26,15 @@ async def setup():
     bot.add_cog(MathGames(bot, session))
     bot.add_cog(Dictionary(bot, session))
     bot.add_cog(Utility(bot))
+    bot.add_cog(Connect(bot, session))
+
+async def process_commands(bot, message):
+    ctx = await bot.get_context(message)
+    await bot.invoke(ctx)
+
+@bot.event
+async def on_message(message):
+    await process_commands(bot, message)
 
 @bot.event
 async def on_ready():
