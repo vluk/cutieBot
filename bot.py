@@ -44,4 +44,4 @@ async def on_ready():
 
 config = configparser.ConfigParser()
 config.read('config.ini')
-bot.run(config.get('tokens', 'DISCORD_TOKEN_1'))
+bot.run(config.get('tokens', 'DISCORD_TOKEN_0'))
