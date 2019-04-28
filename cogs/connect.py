@@ -5,8 +5,7 @@ from utils.bitecoin import add_exp, add_coins
 import asyncio
 
 class Connect(commands.Cog):
-    def __init__(self, bot, session):
-        self.session = session
+    def __init__(self, bot):
         self.bot = bot
         self.nums = ["1\u20E3", "2\u20E3", "3\u20E3", "4\u20E3", "5\u20E3", "6\u20E3", "7\u20E3"]
         self.black = "⚫"
@@ -177,8 +176,8 @@ class Connect(commands.Cog):
 
                         if turn.id != not_turn.id:
                             winning_description += " (+100 exp, +1000 bitecoins!)"
-                            await add_exp(self.session, ctx, turn, 100)
-                            await add_coins(self.session, ctx, turn, 1000)
+                            await add_exp(self.bot.session, ctx, turn, 100)
+                            await add_coins(self.bot.session, ctx, turn, 1000)
 
                         winning_embed = discord.Embed(
                             title = "Winner",
@@ -234,3 +233,6 @@ class Connect(commands.Cog):
                     else:
                         turn = first
                         not_turn = second
+
+def setup(bot):
+    bot.add_cog(Connect(bot))

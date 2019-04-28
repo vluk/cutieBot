@@ -7,15 +7,14 @@ from utils import bitecoin
 from utils.bitecoin import add_coins, add_exp
 
 class Economy(commands.Cog):
-    def __init__(self, bot, session):
+    def __init__(self, bot):
         self.bot = bot
-        self.session = session
 
     @commands.command()
     async def pay(self, ctx, user : discord.Member, amount : int):
         if amount > 0:
-            await add_coins(self.session, ctx, ctx.author, -1 * amount)
-            await add_coins(self.session, ctx, user, amount)
+            await add_coins(self.bot.session, ctx, ctx.author, -1 * amount)
+            await add_coins(self.bot.session, ctx, user, amount)
             await ctx.send("`" + str(amount) + "` bitecoins paid!")
         else:
             await ctx.send("haha nice try")
@@ -23,10 +22,10 @@ class Economy(commands.Cog):
     async def stats(self, ctx, person : discord.Member = None):
         if person == None:
             person = ctx.message.author
-        await add_coins(self.session, ctx, person, 0)
-        level = await bitecoin.get_level(self.session, person.id)
-        xp = await bitecoin.get_xp(self.session, person.id)
-        coins = await bitecoin.get_coins(self.session, person.id)
+        await add_coins(self.bot.session, ctx, person, 0)
+        level = await bitecoin.get_level(self.bot.session, person.id)
+        xp = await bitecoin.get_xp(self.bot.session, person.id)
+        coins = await bitecoin.get_coins(self.bot.session, person.id)
         embed = discord.Embed(
             title = "Level " + str(level),
             description = "Cumulative Exp: `" + str(xp) + "`",
@@ -41,7 +40,7 @@ class Economy(commands.Cog):
 
     @commands.command(aliases=["lb"])
     async def leaderboard(self, ctx):
-        leaderboard_list = await bitecoin.get_leaderboard(self.session)
+        leaderboard_list = await bitecoin.get_leaderboard(self.bot.session)
         leaderboard_string = "```Python\n"
         max_length = max([len(i["name"]) for i in leaderboard_list])
         leaderboard_string += "{0:<6}{1:<{5}}{2:<7}{3:<10}{4:<}\n".format(
@@ -68,3 +67,5 @@ class Economy(commands.Cog):
         leaderboard_string += "```"
         await ctx.send(leaderboard_string)
 
+def setup(bot):
+    bot.add_cog(Economy(bot))

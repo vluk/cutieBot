@@ -13,15 +13,14 @@ letters = {"🇦" : "A", "🇧" : "B", "🇨" : "C", "🇩" : "D", "🇪" : "E"}
 numbers = {"0\u20E3" : "0", "1\u20E3" : "1", "2\u20E3" : "2", "3\u20E3" : "3", "4\u20E3" : "4", "5\u20E3" : "5", "6\u20E3" : "6", "7\u20E3" : "7", "8\u20E3" : "8", "9\u20E3" : "9"}
 
 class LatexGames(commands.Cog):
-    def __init__(self, bot, session):
+    def __init__(self, bot):
         self.bot = bot
-        self.session = session
 
     @commands.command(aliases=["slowmaffs"])
     async def amc(self, ctx):
         coins = 1500
         exp = 150
-        amc = await get_amc(self.session)
+        amc = await get_amc(self.bot.session)
         amc_tex = amc["latex"]
         amc_answer = amc["answer"]
         fn = await generate_image("", amc_tex)
@@ -48,7 +47,7 @@ class LatexGames(commands.Cog):
             print("heyo")
             print(letters[reaction.emoji], amc_answer)
             if letters[reaction.emoji] == amc_answer:
-                if await bitecoin.get_coins(self.session, user.id) < coins // 4:
+                if await bitecoin.get_coins(self.bot.session, user.id) < coins // 4:
                     await (user.mention + " you're too poor to play!")
                 else:
                     bitecoin_string = user.mention+" wins! (+{0} bitecoins, +{1} XP)".format(
@@ -62,22 +61,22 @@ class LatexGames(commands.Cog):
                     )
                     success_string = "{0}\n{1}".format(bitecoin_string, problem_string)
                     await ctx.send(success_string)
-                    await add_coins(self.session, ctx, user, coins)
-                    await add_exp(self.session, ctx, user, exp)
+                    await add_coins(self.bot.session, ctx, user, coins)
+                    await add_exp(self.bot.session, ctx, user, exp)
                     break
             else:
-                if await bitecoin.get_coins(self.session, user.id) < coins // 4:
+                if await bitecoin.get_coins(self.bot.session, user.id) < coins // 4:
                     await ctx.send(user.mention + " you're too poor to play!")
                 else:
                     tried.append(user.id)
                     await ctx.send(user.mention+" wrong! (-{0} bitecoins)".format(coins // 4))
-                    await add_coins(self.session, ctx, user, -1 * (coins // 4))
+                    await add_coins(self.bot.session, ctx, user, -1 * (coins // 4))
 
     @commands.command(aliases=["hardmaffs"])
     async def aime(self, ctx):
         coins = 3000
         exp = 300
-        aime = await get_aime(self.session)
+        aime = await get_aime(self.bot.session)
         aime_tex = aime["latex"]
         aime_answer = aime["answer"]
         fn = await generate_image("", aime_tex)
@@ -119,11 +118,13 @@ class LatexGames(commands.Cog):
                         aime["version"]
                     )
                     success_string = "{0}\n{1}".format(bitecoin_string, problem_string)
-                    await add_coins(self.session, ctx, user, coins)
-                    await add_exp(self.session, ctx, user, exp)
+                    await add_coins(self.bot.session, ctx, user, coins)
+                    await add_exp(self.bot.session, ctx, user, exp)
                     await ctx.send(success_string)
                     break
                 else:
                     await ctx.send(user.mention + " wrong!")
                     tried.append(user.id)
 
+def setup(bot):
+    bot.add_cog(LatexGames(bot))

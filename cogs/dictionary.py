@@ -8,13 +8,12 @@ import datetime
 import random
 
 class Dictionary(commands.Cog):
-    def __init__(self, bot, session):
+    def __init__(self, bot):
         self.bot = bot
-        self.session = session
 
     async def get_define(self, term):
         response = {}
-        async with self.session.get("https://googledictionaryapi.eu-gb.mybluemix.net/?define=" + term) as resp:
+        async with self.bot.session.get("https://googledictionaryapi.eu-gb.mybluemix.net/?define=" + term) as resp:
             json_response = await resp.json()
             response = json_response
         embed = discord.Embed(
@@ -40,7 +39,7 @@ class Dictionary(commands.Cog):
     async def get_udefine(self, term):
         dict_def = {}
         url = "https://api.urbandictionary.com/v0/define?term={0}".format(urllib.parse.quote(term, safe=""))
-        async with self.session.get(url) as resp:
+        async with self.bot.session.get(url) as resp:
             dict_def = await resp.json()
         full_definition = ""
 
@@ -116,3 +115,6 @@ class Dictionary(commands.Cog):
     async def udefine(self, ctx, *, term : str):
         def_embed = await self.get_udefine(term)
         await ctx.send(embed=def_embed)
+
+def setup(bot):
+    bot.add_cog(Dictionary(bot))

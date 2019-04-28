@@ -12,3 +12,5 @@ class Utility(commands.Cog):
         msg = await ctx.send("pong!")
         time_elapsed = msg.created_at - ctx.message.created_at
         await ctx.send("that took {0} seconds".format(str(time_elapsed.total_seconds())))
+def setup(bot):
+    bot.add_cog(Utility(bot))

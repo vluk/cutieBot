@@ -9,9 +9,8 @@ letters = {"🇦" : "A", "🇧" : "B", "🇨" : "C", "🇩" : "D", "🇪" : "E"}
 numbers = {"0\u20E3" : "0", "1\u20E3" : "1", "2\u20E3" : "2", "3\u20E3" : "3", "4\u20E3" : "4", "5\u20E3" : "5", "6\u20E3" : "6", "7\u20E3" : "7", "8\u20E3" : "8", "9\u20E3" : "9"}
 
 class MathGames(commands.Cog):
-    def __init__(self, bot, session):
+    def __init__(self, bot):
         self.bot = bot
-        self.session = session
 
     async def quiz(self, ctx):
         exp = 5
@@ -43,8 +42,8 @@ class MathGames(commands.Cog):
     async def mathquiz(self, ctx):
         result = await self.quiz(ctx)
         if result != 0:
-            await add_exp(self.session, ctx, result["user"], result["exp"])
-            await add_coins(self.session, ctx, result["user"], result["coins"])
+            await add_exp(self.bot.session, ctx, result["user"], result["exp"])
+            await add_coins(self.bot.session, ctx, result["user"], result["coins"])
         else:
             await ctx.send("too slow")
 
@@ -62,5 +61,7 @@ class MathGames(commands.Cog):
                 await ctx.send("too slow")
                 break
         for i in rewards:
-            await add_exp(self.session, ctx, self.bot.get_user(i), rewards[i]["exp"])
-            await add_coins(self.session, ctx, self.bot.get_user(i), rewards[i]["coins"])
+            await add_exp(self.bot.session, ctx, self.bot.get_user(i), rewards[i]["exp"])
+            await add_coins(self.bot.session, ctx, self.bot.get_user(i), rewards[i]["coins"])
+def setup(bot):
+    bot.add_cog(MathGames(bot))

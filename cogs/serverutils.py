@@ -45,3 +45,5 @@ class ServerUtils(commands.Cog):
     async def star(self, message : message_from_link):
         await self.add_star(message)
 
+def setup(bot):
+    bot.add_cog(ServerUtils(bot))

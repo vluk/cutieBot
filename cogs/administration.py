@@ -51,3 +51,6 @@ class Administration(commands.Cog):
     async def say(self, ctx, *, msg : str):
         await ctx.message.delete()
         await ctx.send(msg)
+
+def setup(bot):
+    bot.add_cog(Administration(bot))

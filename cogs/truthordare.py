@@ -4,38 +4,36 @@ from discord.ext import commands
 import redis
 
 class TruthOrDare(commands.Cog):
-    def __init__(self, bot, r):
+    def __init__(self, bot):
         self.bot = bot
-        self.r = r
 
     @commands.command()
     async def addTruth(self, ctx, *, truth : str):
-        self.r.lpush("truths", truth)
+        self.bot.r.sadd("truths", truth)
         await ctx.send("truth added!")
 
     @commands.command()
     async def addDare(self, ctx, *, truth : str):
-        self.r.lpush("dares", truth)
+        self.bot.r.sadd("dares", truth)
         await ctx.send("dare added!")
 
     @commands.command()
     @commands.is_owner()
     async def truth(self, ctx):
-        length = self.r.llen("truths")
+        length = self.bot.r.scard("truths")
         if length == 0:
             await ctx.send("no more truths")
             return
-        truth = self.r.lindex("truths", random.randrange(length)).decode()
-        self.r.lrem("truths", 0, truth)
-        await ctx.send(truth)
+        await ctx.send(self.bot.r.spop("truths").decode())
 
     @commands.command()
     @commands.is_owner()
     async def dare(self, ctx):
-        length = self.r.llen("dares")
+        length = self.bot.r.scard("dares")
         if length == 0:
             await ctx.send("no more dares")
             return
-        dare = self.r.lindex("dares", random.randrange(length)).decode()
-        self.r.lrem("dares", 0, dare)
-        await ctx.send(dare)
+        await ctx.send(self.bot.r.spop("truths").decode())
+
+def setup(bot):
+    bot.add_cog(TruthOrDare(bot))

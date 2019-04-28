@@ -12,16 +12,15 @@ import time
 import pytz
 
 class Query(commands.Cog):
-    def __init__(self, bot, session):
+    def __init__(self, bot):
         self.bot = bot
-        self.session = session
 
     @commands.command()
     async def tblr(self, ctx, *tags):
         tag = "+".join(tags)
         key = "EPqVE8md4LNeVHPRzmmwRBk1pRUpeuy70qdEv455o6ymvPA9pS"
         url = "http://api.tumblr.com/v2/tagged?tag={0}&api_key={1}".format(tag, key)
-        async with self.session.get(url) as resp:
+        async with self.bot.session.get(url) as resp:
             post_dict = await resp.json()
             pic_dict = [i for i in post_dict["response"] if i["type"] == "photo"]
             rand = int(random.random() * len(pic_dict))
@@ -30,7 +29,7 @@ class Query(commands.Cog):
     @commands.command()
     async def sunrise(self, ctx):
         url = "https://api.sunrise-sunset.org/json?lat=37.540135&lng=-122.236916&formatted=0"
-        async with self.session.get(url) as resp:
+        async with self.bot.session.get(url) as resp:
             sunrise_json = await resp.json()
             sunrise_timestamp = sunrise_json["results"]["sunrise"]
             print(sunrise_timestamp)
@@ -58,7 +57,7 @@ class Query(commands.Cog):
     @commands.command()
     async def sunset(self, ctx):
         url = "https://api.sunrise-sunset.org/json?lat=37.540135&lng=-122.236916&formatted=0"
-        async with self.session.get(url) as resp:
+        async with self.bot.session.get(url) as resp:
             sunset_json = await resp.json()
             sunset_timestamp = sunset_json["results"]["sunset"]
             print(sunset_timestamp)
@@ -87,7 +86,7 @@ class Query(commands.Cog):
     async def imdb(self, ctx, *title_words):
         title = " ".join(title_words)
         url = "http://www.omdbapi.com/?apikey=a858832&t=" + title
-        async with self.session.get(url) as resp:
+        async with self.bot.session.get(url) as resp:
             movie_info = await resp.json()
             embed = discord.Embed(
                 color = 0xF5C518,
@@ -107,14 +106,14 @@ class Query(commands.Cog):
     @commands.command()
     async def dog(self, ctx):
         url = "https://dog.ceo/api/breeds/image/random"
-        async with self.session.get(url) as resp:
+        async with self.bot.session.get(url) as resp:
             dict_dog = await resp.json()
             await ctx.send(dict_dog["message"])
 
     async def get_imgur(self, term):
         url = "https://api.imgur.com/3/gallery/r/{0}".format(urllib.parse.quote(term, safe=''))
         headers = {'Authorization': 'Client-ID 17fb67c0bd45585'}
-        async with self.session.get(url, headers=headers) as response:
+        async with self.bot.session.get(url, headers=headers) as response:
             response_json = await response.json()
             response_data = response_json["data"]
             image_data = response_data[int(random.random() * len(response_data))]
@@ -129,7 +128,7 @@ class Query(commands.Cog):
 
     async def get_good_tord(self):
         url = "http://www.riseofsigma.com/best-truth-or-dare-questions/"
-        async with self.session.get(url) as resp:
+        async with self.bot.session.get(url) as resp:
             raw_html = await resp.text()
             soup = bs4.BeautifulSoup(raw_html, "html.parser")
             truths = soup.findAll("pre")[0].string.split("\r\n\r\n")
@@ -147,3 +146,6 @@ class Query(commands.Cog):
         dares = (await self.get_good_tord())[1]
         dare = dares[int(random.random() * len(dares))]
         await ctx.send(dare)
+
+def setup(bot):
+    bot.add_cog(Query(bot))

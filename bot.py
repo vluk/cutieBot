@@ -18,29 +18,46 @@ from cogs.storage import Storage
 
 prefix = '?'
 help_command = commands.DefaultHelpCommand(dm_help=True)
-bot = commands.Bot(command_prefix=prefix, help_command = help_command)
+extensions = (
+    "cogs.administration",
+    "cogs.query",
+    "cogs.serverutils",
+    "cogs.economy",
+    "cogs.mathgames",
+    "cogs.latexgames",
+    "cogs.utility",
+    "cogs.dictionary",
+    "cogs.truthordare",
+    "cogs.storage"
+)
 
-def setup():
-    r = redis.Redis(
-        host="127.0.0.1",
-        port="6379"
-    )
-    session = aiohttp.ClientSession()
-    bot.add_cog(Administration(bot))
-    bot.add_cog(Query(bot, session))
-    bot.add_cog(ServerUtils(bot))
-    bot.add_cog(Economy(bot, session))
-    bot.add_cog(MathGames(bot, session))
-    bot.add_cog(Dictionary(bot, session))
-    bot.add_cog(Utility(bot))
-    bot.add_cog(LatexGames(bot, session))
-    bot.add_cog(TruthOrDare(bot, r))
-    bot.add_cog(Storage(bot, r))
+prefix = '?'
 
-@bot.event
-async def on_ready():
-    setup()
-    print("I am combat ready!")
+class CutieBot(commands.Bot):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.loop.create_task(self.__ainit__(self, *args, **kwargs))
+
+    async def __ainit__(self, *args, **kwargs):
+        await self.wait_until_ready()
+        self.session = aiohttp.ClientSession(loop=self.loop)
+        self.r = redis.Redis(
+            host="127.0.0.1",
+            port="6379"
+        )
+        for extension in extensions:
+            try:
+                self.load_extension(extension)
+            except Exception as e:
+                print('extension {} failed to load'.format(extension))
+                print(e)
+
+    async def on_ready(self):
+        print(self.user.name)
+        print("I am combat ready!")
+
+
+bot = CutieBot(command_prefix=prefix, help_command = help_command)
 
 config = configparser.ConfigParser()
 config.read('config.ini')
