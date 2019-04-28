@@ -3,7 +3,6 @@ from discord.ext import commands
 
 import configparser
 
-import random
 import aiohttp
 import json
 from urllib import request, parse
@@ -60,17 +59,17 @@ async def add_exp(session, ctx, user, amount):
     while exp > next_exp(level):
         level += 1
         link = "https://api.giphy.com/v1/gifs/search?q=bunny&api_key=INJuIdbai3pyu6J4Kk0HFikfDanmbZMM&limit=100"
-        async with session.get(link) as resp:
-            resp_json = await resp.json()
-            congrats_link_objects = resp_json["data"]
+        async with session.get(url) as resp:
+            congrats_link_objects = (await resp.json())["data"]
             congrats_link_object = congrats_link_objects[int(random.random() * len(congrats_link_objects))]
-            congrats_link = congrats_link_object["images"]["fixed_height"]["url"]
+            congrats_link = congrats_link_objects["images"]["fixed_height"]["url"]
             congrats_link = congrats_link.replace("\\/", "/")
+            print(congratsLink)
             embed = discord.Embed(
                 title = "Level Up!",
                 description = "Congrats! You are now level `" + str(level) + "`!"
             )
-            embed.set_thumbnail(url = congrats_link)
+            embed.set_thumbnail(url = congratsLink)
             embed.set_author(name = user.name, icon_url = user.avatar_url)
 
             await ctx.send(embed = embed)

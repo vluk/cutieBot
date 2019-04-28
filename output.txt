@@ -2731,7 +2731,7 @@ Latexmk: applying rule 'pdflatex'...
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
-(./utils/latex_files/862111004.tex
+(./utils/latex_files/1773806127.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
@@ -2772,7 +2772,7 @@ For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/862111004.aux)
+(./utils/latex_files/1773806127.aux)
 Preview: Fontsize 10pt
 Preview: PDFoutput 1
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -2786,18 +2786,17 @@ Preview: PDFoutput 1
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
 Preview: Tightpage 0 0 0 0
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/862111004.aux) )</usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb>
-Output written on utils/latex_files/862111004.pdf (1 page, 26541 bytes).
-Transcript written on utils/latex_files/862111004.log.
+(./utils/latex_files/1773806127.aux) )</usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on utils/latex_files/1773806127.pdf (1 page, 12779 bytes).
+Transcript written on utils/latex_files/1773806127.log.
 === TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/862111004.pdf) are up-to-date
+Latexmk: All targets (utils/latex_files/1773806127.pdf) are up-to-date
 Latexmk: applying rule 'pdflatex'...
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
-(./utils/latex_files/2048249497.tex
+(./utils/latex_files/1661471865.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
@@ -2838,7 +2837,7 @@ For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/2048249497.aux)
+(./utils/latex_files/1661471865.aux)
 Preview: Fontsize 10pt
 Preview: PDFoutput 1
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -2852,87 +2851,20 @@ Preview: PDFoutput 1
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
 Preview: Tightpage 0 0 0 0
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/2048249497.aux) )</usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb>
-Output written on utils/latex_files/2048249497.pdf (1 page, 34363 bytes).
-Transcript written on utils/latex_files/2048249497.log.
-=== TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/2048249497.pdf) are up-to-date
-Latexmk: applying rule 'pdflatex'...
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
- restricted \write18 enabled.
-entering extended mode
-(./utils/latex_files/684902633.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
-Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
-dalone
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/preview.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/luatex85/luatex85.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/prtightpage.def)))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/asymptote/asymptote.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/684902633.aux)
-Preview: Fontsize 10pt
-Preview: PDFoutput 1
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
-Preview: Tightpage 0 0 0 0
-[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/684902633.aux) )</usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+(./utils/latex_files/1661471865.aux) )</usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb>
-Output written on utils/latex_files/684902633.pdf (1 page, 38448 bytes).
-Transcript written on utils/latex_files/684902633.log.
+1/public/amsfonts/cm/cmr7.pfb>
+Output written on utils/latex_files/1661471865.pdf (1 page, 39096 bytes).
+Transcript written on utils/latex_files/1661471865.log.
 === TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/684902633.pdf) are up-to-date
+Latexmk: All targets (utils/latex_files/1661471865.pdf) are up-to-date
 Latexmk: applying rule 'pdflatex'...
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
-(./utils/latex_files/1378772898.tex
+(./utils/latex_files/5471311.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
@@ -2973,7 +2905,7 @@ For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/1378772898.aux)
+(./utils/latex_files/5471311.aux)
 Preview: Fontsize 10pt
 Preview: PDFoutput 1
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -2987,499 +2919,19 @@ Preview: PDFoutput 1
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
 Preview: Tightpage 0 0 0 0
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/1378772898.aux) )</usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb>
-Output written on utils/latex_files/1378772898.pdf (1 page, 35472 bytes).
-Transcript written on utils/latex_files/1378772898.log.
-=== TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/1378772898.pdf) are up-to-date
-Latexmk: applying rule 'pdflatex'...
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
- restricted \write18 enabled.
-entering extended mode
-(./utils/latex_files/330665980.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
-Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
-dalone
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/preview.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/luatex85/luatex85.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/prtightpage.def)))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/asymptote/asymptote.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/330665980.aux)
-Preview: Fontsize 10pt
-Preview: PDFoutput 1
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
-Preview: Tightpage 0 0 0 0
-[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/330665980.aux) )</usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb>
-Output written on utils/latex_files/330665980.pdf (1 page, 25623 bytes).
-Transcript written on utils/latex_files/330665980.log.
-=== TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/330665980.pdf) are up-to-date
-Latexmk: applying rule 'pdflatex'...
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
- restricted \write18 enabled.
-entering extended mode
-(./utils/latex_files/1921499378.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
-Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
-dalone
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/preview.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/luatex85/luatex85.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/prtightpage.def)))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/asymptote/asymptote.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/1921499378.aux)
-Preview: Fontsize 10pt
-Preview: PDFoutput 1
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
-Preview: Tightpage 0 0 0 0
-[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/1921499378.aux) )</usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb>
-Output written on utils/latex_files/1921499378.pdf (1 page, 42267 bytes).
-Transcript written on utils/latex_files/1921499378.log.
-=== TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/1921499378.pdf) are up-to-date
-Latexmk: applying rule 'pdflatex'...
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
- restricted \write18 enabled.
-entering extended mode
-(./utils/latex_files/1640231104.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
-Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
-dalone
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/preview.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/luatex85/luatex85.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/prtightpage.def)))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/asymptote/asymptote.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/1640231104.aux)
-Preview: Fontsize 10pt
-Preview: PDFoutput 1
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
-Preview: Tightpage 0 0 0 0
-[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/1640231104.aux) )</usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb>
-Output written on utils/latex_files/1640231104.pdf (1 page, 32284 bytes).
-Transcript written on utils/latex_files/1640231104.log.
-=== TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/1640231104.pdf) are up-to-date
-Latexmk: applying rule 'pdflatex'...
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
- restricted \write18 enabled.
-entering extended mode
-(./utils/latex_files/1048396843.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
-Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
-dalone
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/preview.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/luatex85/luatex85.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/prtightpage.def)))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/asymptote/asymptote.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/1048396843.aux)
-Preview: Fontsize 10pt
-Preview: PDFoutput 1
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
-Preview: Tightpage 0 0 0 0
-[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/1048396843.aux) )</usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb>
-Output written on utils/latex_files/1048396843.pdf (1 page, 27784 bytes).
-Transcript written on utils/latex_files/1048396843.log.
-=== TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/1048396843.pdf) are up-to-date
-Latexmk: applying rule 'pdflatex'...
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
- restricted \write18 enabled.
-entering extended mode
-(./utils/latex_files/1477285648.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
-Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
-dalone
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/preview.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/luatex85/luatex85.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/prtightpage.def)))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/asymptote/asymptote.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/1477285648.aux)
-Preview: Fontsize 10pt
-Preview: PDFoutput 1
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
-Preview: Tightpage 0 0 0 0
-[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/1477285648.aux) )</usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb>
-Output written on utils/latex_files/1477285648.pdf (1 page, 48360 bytes).
-Transcript written on utils/latex_files/1477285648.log.
-=== TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/1477285648.pdf) are up-to-date
-Latexmk: applying rule 'pdflatex'...
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
- restricted \write18 enabled.
-entering extended mode
-(./utils/latex_files/1064133000.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
-Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
-dalone
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/preview.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/luatex85/luatex85.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/prtightpage.def)))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/asymptote/asymptote.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/1064133000.aux)
-Preview: Fontsize 10pt
-Preview: PDFoutput 1
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
-Overfull \hbox (22.38885pt too wide) in paragraph at lines 11--12
-[]$[] \OT1/cmr/m/n/10 [1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 200] [] [201\OML/cmm
-/m/it/10 ; \OT1/cmr/m/n/10 400] [] [401\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 600] 
-[] [601\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 800] [] [801\OML/cmm/m/it/10 ; \OT1/c
-mr/m/n/10 999]$ 
-Preview: Tightpage 0 0 0 0
-[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/1064133000.aux) )
-(see the transcript file for additional information)</usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on utils/latex_files/1064133000.pdf (1 page, 50569 bytes).
-Transcript written on utils/latex_files/1064133000.log.
-=== TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/1064133000.pdf) are up-to-date
-Latexmk: applying rule 'pdflatex'...
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
- restricted \write18 enabled.
-entering extended mode
-(./utils/latex_files/936832516.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
-Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
-dalone
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/preview.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/luatex85/luatex85.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/prtightpage.def)))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/asymptote/asymptote.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/936832516.aux)
-Preview: Fontsize 10pt
-Preview: PDFoutput 1
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
-Preview: Tightpage 0 0 0 0
-[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/936832516.aux) )</usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+(./utils/latex_files/5471311.aux) )</usr/local/texlive/2018/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb>
-Output written on utils/latex_files/936832516.pdf (1 page, 47964 bytes).
-Transcript written on utils/latex_files/936832516.log.
+/public/amsfonts/cm/cmr7.pfb>
+Output written on utils/latex_files/5471311.pdf (1 page, 31540 bytes).
+Transcript written on utils/latex_files/5471311.log.
 === TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/936832516.pdf) are up-to-date
+Latexmk: All targets (utils/latex_files/5471311.pdf) are up-to-date
 Latexmk: applying rule 'pdflatex'...
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
-(./utils/latex_files/1624150694.tex
+(./utils/latex_files/1645691501.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
@@ -3520,76 +2972,7 @@ For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/1624150694.aux)
-Preview: Fontsize 10pt
-Preview: PDFoutput 1
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
-Overfull \hbox (3.1945pt too wide) in paragraph at lines 11--12
-[]$[] [] [] [] [] [] [] [] [] []$ 
-Preview: Tightpage 0 0 0 0
-[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/1624150694.aux) )
-(see the transcript file for additional information)</usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on utils/latex_files/1624150694.pdf (1 page, 26965 bytes).
-Transcript written on utils/latex_files/1624150694.log.
-=== TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/1624150694.pdf) are up-to-date
-Latexmk: applying rule 'pdflatex'...
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
- restricted \write18 enabled.
-entering extended mode
-(./utils/latex_files/1943369539.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
-Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
-dalone
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/preview.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/luatex85/luatex85.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preview/prtightpage.def)))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/asymptote/asymptote.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
-(./utils/latex_files/1943369539.aux)
+(./utils/latex_files/1645691501.aux)
 Preview: Fontsize 10pt
 Preview: PDFoutput 1
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -3603,14 +2986,10 @@ Preview: PDFoutput 1
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
 Preview: Tightpage 0 0 0 0
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./utils/latex_files/1943369539.aux) )</usr/local/texlive/2018/texmf-dist/fonts
+(./utils/latex_files/1645691501.aux) )</usr/local/texlive/2018/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb>
-Output written on utils/latex_files/1943369539.pdf (1 page, 56097 bytes).
-Transcript written on utils/latex_files/1943369539.log.
+type1/public/amsfonts/cm/cmr10.pfb>
+Output written on utils/latex_files/1645691501.pdf (1 page, 27600 bytes).
+Transcript written on utils/latex_files/1645691501.log.
 === TeX engine is 'pdfTeX'
-Latexmk: All targets (utils/latex_files/1943369539.pdf) are up-to-date
+Latexmk: All targets (utils/latex_files/1645691501.pdf) are up-to-date

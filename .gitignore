@@ -1,4 +1,5 @@
 cutieenv/
 config.ini
-latex_files/*
+*.rdb
+utils/latex_files/*
 __pycache__/
