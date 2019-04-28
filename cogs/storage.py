@@ -8,7 +8,7 @@ class Storage(commands.Cog):
         self.r = r
 
     @commands.command()
-    async def addmeme(self, ctx, name, *, value : str):
+    async def addMeme(self, ctx, name, *, value : str):
         if self.r.hexists("memes", name):
             await ctx.send("already exists!")
         else:
@@ -24,7 +24,7 @@ class Storage(commands.Cog):
 
     @commands.command()
     @commands.is_owner()
-    async def removememe(self, ctx, name):
+    async def removeMeme(self, ctx, name):
         if self.r.hexists("memes", name):
             self.r.hdel("memes", name)
             await ctx.send("removed!")
