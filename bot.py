@@ -5,17 +5,6 @@ import configparser
 import aiohttp
 import redis
 
-from cogs.administration import Administration
-from cogs.query import Query
-from cogs.serverutils import ServerUtils
-from cogs.economy import Economy
-from cogs.mathgames import MathGames
-from cogs.latexgames import LatexGames
-from cogs.utility import Utility
-from cogs.dictionary import Dictionary
-from cogs.truthordare import TruthOrDare
-from cogs.storage import Storage
-
 prefix = '?'
 help_command = commands.DefaultHelpCommand(dm_help=True)
 extensions = (
