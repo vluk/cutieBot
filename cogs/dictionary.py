@@ -12,6 +12,7 @@ class Dictionary(commands.Cog):
         self.bot = bot
 
     async def get_define(self, term):
+        # query api for definition
         response = {}
         async with self.bot.session.get("https://googledictionaryapi.eu-gb.mybluemix.net/?define=" + term) as resp:
             json_response = await resp.json()
@@ -48,6 +49,7 @@ class Dictionary(commands.Cog):
         definition = (dict_def["list"][0]["definition"])
         example = (dict_def["list"][0]["example"])
 
+        # handle special characters
         definition = definition.replace("\\", "\\\\")
         definition = definition.replace("*", "\\*")
         definition = definition.replace("_", "\\_")

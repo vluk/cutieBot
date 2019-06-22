@@ -6,12 +6,14 @@ class ServerUtils(commands.Cog):
         self.bot = bot
 
     async def message_from_link(self, link):
+        """Returns a Discord message given a link to the message."""
         split_link = link.split("/")
         channel = self.bot.get_channel(int(split_link[-2]))
         message = await self.bot.get_message(channel, int(split_link[-1]))
         return message
 
     async def add_star(self, message):
+        """Adds an image to #night-sky for posterity."""
         author = message.author
         channel = self.bot.get_channel(483357571756064782)
         description = message.clean_content
@@ -37,12 +39,14 @@ class ServerUtils(commands.Cog):
 
     @commands.Cog.listener()
     async def on_raw_reaction_add(self, payload):
+        """Detects #night-sky add requests."""
         if payload.emoji.name == "⭐":
             message = await self.bot.get_channel(payload.channel_id).fetch_message(payload.message_id)
             await self.add_star(message)
 
     @commands.command()
     async def star(self, message : message_from_link):
+        """Manually adds to #night-sky given link."""
         await self.add_star(message)
 
 def setup(bot):

@@ -17,6 +17,7 @@ class Query(commands.Cog):
 
     @commands.command()
     async def tblr(self, ctx, *tags):
+        """Searches Tumblr for an image with the given tag."""
         tag = "+".join(tags)
         key = "EPqVE8md4LNeVHPRzmmwRBk1pRUpeuy70qdEv455o6ymvPA9pS"
         url = "http://api.tumblr.com/v2/tagged?tag={0}&api_key={1}".format(tag, key)
@@ -28,6 +29,7 @@ class Query(commands.Cog):
 
     @commands.command()
     async def sunrise(self, ctx):
+        """Gets time of sunrise."""
         url = "https://api.sunrise-sunset.org/json?lat=37.540135&lng=-122.236916&formatted=0"
         async with self.bot.session.get(url) as resp:
             sunrise_json = await resp.json()
@@ -56,6 +58,7 @@ class Query(commands.Cog):
 
     @commands.command()
     async def sunset(self, ctx):
+        """Gets time of sunset."""
         url = "https://api.sunrise-sunset.org/json?lat=37.540135&lng=-122.236916&formatted=0"
         async with self.bot.session.get(url) as resp:
             sunset_json = await resp.json()
@@ -84,6 +87,7 @@ class Query(commands.Cog):
 
     @commands.command()
     async def imdb(self, ctx, *title_words):
+        """Queries IMDb for info on a given movie."""
         title = " ".join(title_words)
         url = "http://www.omdbapi.com/?apikey=a858832&t=" + title
         async with self.bot.session.get(url) as resp:
@@ -105,12 +109,14 @@ class Query(commands.Cog):
 
     @commands.command()
     async def dog(self, ctx):
+        """Gives a dog."""
         url = "https://dog.ceo/api/breeds/image/random"
         async with self.bot.session.get(url) as resp:
             dict_dog = await resp.json()
             await ctx.send(dict_dog["message"])
 
     async def get_imgur(self, term):
+        """Fetches image from Imgur given a tag."""
         url = "https://api.imgur.com/3/gallery/r/{0}".format(urllib.parse.quote(term, safe=''))
         headers = {'Authorization': 'Client-ID 17fb67c0bd45585'}
         async with self.bot.session.get(url, headers=headers) as response:
@@ -123,10 +129,12 @@ class Query(commands.Cog):
 
     @commands.command(aliases=["r", "imgur"])
     async def reddit(self, ctx, *, term : str):
+        """Gets image from certain subreddit on Imgur."""
         image_data = await self.get_imgur(term)
         await ctx.send(image_data)
 
     async def get_good_tord(self):
+        """Fetches a Truth or Dare question."""
         url = "http://www.riseofsigma.com/best-truth-or-dare-questions/"
         async with self.bot.session.get(url) as resp:
             raw_html = await resp.text()
@@ -137,12 +145,14 @@ class Query(commands.Cog):
 
     @commands.command()
     async def goodTruth(self, ctx):
+        """Gives a Truth question."""
         truths = (await self.get_good_tord())[0]
         truth = truths[int(random.random() * len(truths))]
         await ctx.send(truth)
 
     @commands.command()
     async def goodDare(self, ctx):
+        """Gives a Dare question."""
         dares = (await self.get_good_tord())[1]
         dare = dares[int(random.random() * len(dares))]
         await ctx.send(dare)

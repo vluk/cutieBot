@@ -9,17 +9,20 @@ class TruthOrDare(commands.Cog):
 
     @commands.command()
     async def addTruth(self, ctx, *, truth : str):
+        """Adds anonymous Truth question."""
         self.bot.r.sadd("truths", truth)
         await ctx.send("truth added!")
 
     @commands.command()
     async def addDare(self, ctx, *, truth : str):
+        """Adds anonymous Dare question."""
         self.bot.r.sadd("dares", truth)
         await ctx.send("dare added!")
 
     @commands.command()
     @commands.is_owner()
     async def truth(self, ctx):
+        """Gets anonymous Truth question."""
         length = self.bot.r.scard("truths")
         if length == 0:
             await ctx.send("no more truths")
@@ -29,6 +32,7 @@ class TruthOrDare(commands.Cog):
     @commands.command()
     @commands.is_owner()
     async def dare(self, ctx):
+        """Gets anonymous Dare question."""
         length = self.bot.r.scard("dares")
         if length == 0:
             await ctx.send("no more dares")

@@ -8,6 +8,7 @@ class Storage(commands.Cog):
 
     @commands.command()
     async def addMeme(self, ctx, name, *, value : str):
+        """Stores a meme given name and value."""
         if self.bot.r.hexists("memes", name):
             await ctx.send("already exists!")
         else:
@@ -16,6 +17,7 @@ class Storage(commands.Cog):
 
     @commands.command()
     async def meme(self, ctx, name):
+        """Fetches meme given name."""
         if self.bot.r.hexists("memes", name):
             await ctx.send(self.bot.r.hget("memes", name).decode())
         else:
@@ -24,6 +26,7 @@ class Storage(commands.Cog):
     @commands.command()
     @commands.is_owner()
     async def removeMeme(self, ctx, name):
+        """Removes a meme from the database."""
         if self.bot.r.hexists("memes", name):
             self.bot.r.hdel("memes", name)
             await ctx.send("removed!")
@@ -32,6 +35,7 @@ class Storage(commands.Cog):
 
     @commands.command()
     async def memes(self, ctx):
+        """Lists all available memes."""
         if self.bot.r.hlen("memes") == 0:
             await ctx.send("there arent any memes right now!")
         else:

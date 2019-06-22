@@ -3,6 +3,7 @@ import random
 import subprocess
 
 async def generate_image(preamble, latex):
+    """Compiles LaTeX and gives image."""
     filenum = str(random.randint(1, 2 ** 31))
     texfilename = "utils/latex_files/{0}.tex".format(filenum)
     imgfilename = "utils/latex_files/{0}.png".format(filenum)

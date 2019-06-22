@@ -15,10 +15,12 @@ async def get_amc(session):
     problem_page = problem_soup.find("div", {"id" : "mw-content-text"})
     problems = problem_page.find_all("h2")
 
+    # remove false matches
     del problems[0]
     del problems[-1]
 
     problem = problems[problem_number]
+    # go to section with raw text from header
     problem_part = problem.next_sibling.next_sibling
     problem_tex = await paragraphs(problem_part)
 
@@ -48,10 +50,12 @@ async def get_aime(session):
     problem_page = problem_soup.find("div", {"id" : "mw-content-text"})
     problems = problem_page.find_all("h2")
 
+    # remove false matches
     del problems[0]
     del problems[-1]
 
     problem = problems[problem_number]
+    # go to section with raw text from header
     problem_part = problem.next_sibling.next_sibling
     problem_tex = await paragraphs(problem_part)
 
@@ -68,6 +72,7 @@ async def get_aime(session):
     return {"latex" : problem_tex, "answer" : answer, "year" : year, "version" : version, "problem": problem_number}
 
 async def paragraphs(problem_part):
+    """Parses the HTML to get the LaTeX for a problem."""
     # never tell me the odds
     problem_tex = ""
     while True:

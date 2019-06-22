@@ -7,6 +7,7 @@ class Administration(commands.Cog):
         self.bot = bot
 
     async def bot_exec(self, ctx, str_code):
+        """Takes a series of semicolon seperated statements and evaluates them."""
         results = []
         memory = []
         codes = str_code.strip('` ').split(";")
@@ -26,9 +27,11 @@ class Administration(commands.Cog):
 
         env.update(globals())
 
+        # handle multi-statement debugs
         for code in codes:
             try:
                 result = eval(code, env)
+                # async if necessary
                 if inspect.isawaitable(result):
                     result = await result
                 results.append(result)
@@ -39,16 +42,19 @@ class Administration(commands.Cog):
     @commands.command(hidden=True)
     @commands.is_owner()
     async def logout(self, ctx):
+        """Logs the bot out."""
         await ctx.bot.logout()
 
     @commands.command(hidden=True)
     @commands.is_owner()
     async def debug(self, ctx, *, str_code : str):
+        """Takes evaluates a series of statements."""
         await self.bot_exec(ctx, str_code)
 
     @commands.command(hidden=True)
     @commands.is_owner()
     async def say(self, ctx, *, msg : str):
+        """Has the bot send a message."""
         await ctx.message.delete()
         await ctx.send(msg)
 

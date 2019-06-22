@@ -18,6 +18,7 @@ class LatexGames(commands.Cog):
 
     @commands.command(aliases=["slowmaffs"])
     async def amc(self, ctx):
+        """Quizzes a random AMC 12 problem."""
         coins = 1500
         exp = 150
         amc = await get_amc(self.bot.session)
@@ -74,6 +75,7 @@ class LatexGames(commands.Cog):
 
     @commands.command(aliases=["hardmaffs"])
     async def aime(self, ctx):
+        """Quizzes a random AIME problem."""
         coins = 3000
         exp = 300
         aime = await get_aime(self.bot.session)
@@ -81,7 +83,6 @@ class LatexGames(commands.Cog):
         aime_answer = aime["answer"]
         fn = await generate_image("", aime_tex)
         message = await ctx.send(file=discord.File(fn))
-
 
         os.system("rm " + fn)
 
@@ -100,6 +101,7 @@ class LatexGames(commands.Cog):
             )
 
         while True:
+            # get number response
             reaction, user = await self.bot.wait_for("reaction_add", check=check)
             print("heyo")
             print(numbers[reaction.emoji], aime_answer)

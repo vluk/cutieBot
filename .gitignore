@@ -3,3 +3,4 @@ config.ini
 *.rdb
 utils/latex_files/*
 __pycache__/
+Dockerfile

@@ -12,14 +12,17 @@ class Economy(commands.Cog):
 
     @commands.command()
     async def pay(self, ctx, user : discord.Member, amount : int):
+        """Pays someone a certain amount of money."""
         if amount > 0:
             await add_coins(self.bot.session, ctx, ctx.author, -1 * amount)
             await add_coins(self.bot.session, ctx, user, amount)
             await ctx.send("`" + str(amount) + "` bitecoins paid!")
         else:
             await ctx.send("haha nice try")
+
     @commands.command()
     async def stats(self, ctx, person : discord.Member = None):
+        """Gets your or another player's stats."""
         if person == None:
             person = ctx.message.author
         await add_coins(self.bot.session, ctx, person, 0)
@@ -40,6 +43,7 @@ class Economy(commands.Cog):
 
     @commands.command(aliases=["lb"])
     async def leaderboard(self, ctx):
+        """Gets the leaderboard, sorted by amount of money."""
         leaderboard_list = await bitecoin.get_leaderboard(self.bot.session)
         leaderboard_string = "```Python\n"
         max_length = max([len(i["name"]) for i in leaderboard_list])

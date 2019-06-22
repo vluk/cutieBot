@@ -13,10 +13,12 @@ class MathGames(commands.Cog):
         self.bot = bot
 
     async def quiz(self, ctx):
+        """Generates and sends a single simple math problem."""
         exp = 5
         coins = 50
         timeout = 7.5
         operator_tuple = (" * ", " + ", " - ")
+        # generate problem
         info = [[str(int(random.random() * 10) + 1) for k in range(4)],
             [operator_tuple[int(random.random() * 3)] for k in range(3)]]
         length = random.randint(2,4) * 2 - 1
@@ -25,11 +27,16 @@ class MathGames(commands.Cog):
             expression_string += "-"
         for i in range(length):
             expression_string += info[i % 2][i // 2]
+
         answer = str(eval(expression_string))
+
         def check(message):
             return message.channel.id == ctx.message.channel.id and message.content == answer
+
         question_message = await ctx.send(expression_string)
+
         print(answer)
+
         try:
             msg = await self.bot.wait_for("message", timeout = timeout, check=check)
             seconds = (msg.created_at - question_message.created_at).total_seconds()
@@ -40,6 +47,7 @@ class MathGames(commands.Cog):
 
     @commands.command(aliases=["quickmaffs"])
     async def mathquiz(self, ctx):
+        """Wrapper for quiz function."""
         result = await self.quiz(ctx)
         if result != 0:
             await add_exp(self.bot.session, ctx, result["user"], result["exp"])
@@ -49,9 +57,12 @@ class MathGames(commands.Cog):
 
     @commands.command(aliases=["maffstream"])
     async def quizstream(self, ctx):
+        """Wrapper for quiz function, but automatically refreshing."""
+        # stores rewards and gives at end
         rewards = {}
         while True:
             result = await self.quiz(ctx)
+
             if result != 0:
                 if not result["user"].id in rewards:
                     rewards[result["user"].id] = {"coins" : 0, "exp" : 0}
@@ -60,8 +71,10 @@ class MathGames(commands.Cog):
             else:
                 await ctx.send("too slow")
                 break
+
         for i in rewards:
             await add_exp(self.bot.session, ctx, self.bot.get_user(i), rewards[i]["exp"])
             await add_coins(self.bot.session, ctx, self.bot.get_user(i), rewards[i]["coins"])
+
 def setup(bot):
     bot.add_cog(MathGames(bot))

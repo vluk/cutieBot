@@ -13,12 +13,14 @@ class Connect(commands.Cog):
         self.red = "🔴"
 
     async def drop(self, board, place, color):
+        """Drops a piece onto the board of a certain color."""
         for i in list(reversed(range(len(board)))):
             if (board[i][place] == 0):
                 board[i][place] = color
                 return [i, place]
 
     async def check_victory(self, pos, board, color):
+        """Checks if there's a victory in a certain postition of the board."""
         for i in range(len(board) - 3):
             if (all([board[i + j][pos[1]] == color for j in range(4)])):
                 return True
@@ -45,6 +47,7 @@ class Connect(commands.Cog):
         return False
 
     async def generate_board(self, board):
+        """Generates a discord-displayable board."""
         output = ""
         for i in board:
             for j in i:
@@ -60,6 +63,7 @@ class Connect(commands.Cog):
         return output
 
     async def generate_winning_board(self, board):
+        """Generates a discord-displayable board for a winning condition."""
         output = ""
         for i in board:
             for j in i:
@@ -74,16 +78,19 @@ class Connect(commands.Cog):
 
     @commands.command()
     async def connect(self, ctx, person : discord.Member=None, timeout : int=None):
+        """Starts a game of Connect Four against a specific person with an optional timeout."""
         first = ctx.message.author
         second = person
 
         board = [[0 for i in range(7)] for j in range(6)]
 
+        # initialize game state
         turn = first
         not_turn = second
         first_turn = True
         turn_count = 0
 
+        # generate game embed
         first_embed = discord.Embed(
             title = "VS",
             description = "..."
@@ -111,8 +118,8 @@ class Connect(commands.Cog):
         for i in self.nums:
             await message.add_reaction(i)
 
+        # play game
         while (True):
-
             def check(reaction, user):
                 return (
                     reaction.message.id == message.id
@@ -129,6 +136,7 @@ class Connect(commands.Cog):
                     check=check,
                     timeout=current_timeout
                 )
+            # timeout
             except asyncio.TimeoutError:
                 winning_description = "Opponent timed out."
                 winning_embed = discord.Embed(
@@ -146,6 +154,7 @@ class Connect(commands.Cog):
                     embed = winning_embed
                 )
             else:
+                # handle turn
                 emoji = reaction.emoji
 
                 place = self.nums.index(emoji)
@@ -168,6 +177,8 @@ class Connect(commands.Cog):
                         first_turn = True
 
                     pos = await self.drop(board, place, color)
+
+                    #check victory
 
                     if (await self.check_victory(pos, board, color)):
                         await message.clear_reactions()
@@ -195,6 +206,7 @@ class Connect(commands.Cog):
                         )
                         return
 
+                    # first turn handling
                     if (second != None):
                         new_embed = discord.Embed(
                             title = "VS",
@@ -209,7 +221,7 @@ class Connect(commands.Cog):
                             icon_url = turn.avatar_url
                         )
                     else:
-                        new_embed = discord.Embed( 
+                        new_embed = discord.Embed(
                             title = "VS",
                             description = "..."
                         )
