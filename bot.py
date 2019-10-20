@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 
+import json
 import traceback
 import configparser
 import aiohttp
@@ -19,9 +20,14 @@ extensions = (
     "cogs.dictionary",
     "cogs.truthordare",
     "cogs.storage",
+    "cogs.archive",
+    "cogs.connect",
+    "cogs.statistics",
+    "cogs.random"
 )
 
 prefix = '?'
+
 
 class CutieBot(commands.Bot):
     def __init__(self, *args, **kwargs):
@@ -35,6 +41,7 @@ class CutieBot(commands.Bot):
             host="127.0.0.1",
             port="6379"
         )
+        self.archive = json.loads(self.r.get("archive").decode())
         for extension in extensions:
             try:
                 self.load_extension(extension)
