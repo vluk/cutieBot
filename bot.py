@@ -23,7 +23,8 @@ extensions = (
     "cogs.archive",
     "cogs.connect",
     "cogs.statistics",
-    "cogs.random"
+    "cogs.random",
+    "cogs.air"
 )
 
 prefix = '?'
@@ -36,7 +37,7 @@ class CutieBot(commands.Bot):
         self.loop.create_task(self.__ainit__(self, *args, **kwargs))
 
     async def __ainit__(self, *args, **kwargs):
-        self.session = aiohttp.ClientSession(loop=self.loop)
+        self.session = aiohttp.ClientSession(loop=self.loop, cookie_jar=aiohttp.CookieJar())
         self.r = redis.Redis(
             host="127.0.0.1",
             port="6379"
